@@ -350,7 +350,7 @@ class MainActivity : AppCompatActivity() {
                     password,             //Odoo Password                                                                 | String
                     model_name,                  //Model_name (res.partners)                                                     | String
                     "create",                    //method_name (create)                                                          | String
-                    listOf(fields)               //fields to fetch [ listOf("name", "Ilja") ]                                    | List<Any> --> [ HashMap <String, String> ]
+                    listOf(fields)               //fields to fetch [ listOf("name", "NAME") ]                                    | List<Any> --> [ HashMap <String, String> ]
                 )
             ) as Array<Any?>
             return ret
