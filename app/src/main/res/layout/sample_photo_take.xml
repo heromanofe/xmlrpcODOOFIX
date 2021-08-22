@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#341459"
+    android:orientation="vertical"
+    android:paddingEnd="2dp">
+
+    <ImageButton
+        android:id="@+id/DelButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:backgroundTint="#5A336A"
+        android:scaleType="fitCenter"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:tint="@color/white"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ImageCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:srcCompat="@color/black"
+        tools:visibility="visible" />
+
+</LinearLayout>
