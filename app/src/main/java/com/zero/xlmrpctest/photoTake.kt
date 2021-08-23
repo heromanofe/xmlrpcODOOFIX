@@ -45,7 +45,7 @@ class photoTake(
         }
         if (encode) GlobalScope.launch {
             val byteArrayOutputStream = ByteArrayOutputStream()
-            //imageBP.compress(Bitmap.CompressFormat.JPEG, 90, byteArrayOutputStream) //CHANGE QUALITY HERE
+            imageBP.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream) //CHANGE QUALITY HERE
             val byteArray = byteArrayOutputStream.toByteArray()
             val en = Base64.encodeToString(byteArray, Base64.DEFAULT)
             println("ENCODED")
